@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class insertionsort{
-    public static void selection_Sort(int arr[]){
+    public static void insertion_Sort(int arr[]){
         int n=arr.length;
         for(int i=1;i<n;i++){
             int j=i;
@@ -25,8 +25,8 @@ public class insertionsort{
         int arr[]=new int[n];
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
-        }
-        selection_Sort(arr);
+        }stri
+        insertion_Sort(arr);
         System.out.println("Insertion Sorted array is:");
         for(int i=0;i<arr.length;i++){
             System.out.print(" "+arr[i]);
