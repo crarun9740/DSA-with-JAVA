@@ -15,6 +15,8 @@ public class Hashmap {
        for(Map.Entry<Integer,String> e : map.entrySet()){
         System.out.println(e.getValue());
         System.out.println(e.getKey());
+
        }
+       System.out.println(map.size());
     }
 }
