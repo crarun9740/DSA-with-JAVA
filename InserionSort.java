@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class InserionSort {
@@ -12,6 +13,18 @@ public class InserionSort {
         System.out.println();
         return arr;
     } 
+    public static int[] ins_Sort(int arr[]){
+        for(int i=1;i<arr.length;i++){
+            int temp=arr[i];
+            int j=i-1;
+            while(j >=0 && arr[j] > temp){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=temp;
+        }
+        return arr;
+    }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of Array : ");
@@ -23,6 +36,8 @@ public class InserionSort {
         }
         System.out.println("Selection Sorted Array is : ");
         sort_in(arr);
+
+        System.out.println(Arrays.toString(ins_Sort(arr)));
 
     }
 }
