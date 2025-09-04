@@ -54,13 +54,13 @@ public class bstSearch {
         bstSearch b=new bstSearch();
 
         TreeNode root=null;
-        root=b.Insert(root, 6);
+        root=b.Insert(root, 3);
         b.Insert(root, 2);
-        b.Insert(root, 5);
-        b.Insert(root, 8);
-        b.Insert(root, 3);
-        b.Insert(root, 11);
-        b.Insert(root, 21);
+        b.Insert(root, 7);
+        b.Insert(root, 4);
+        b.Insert(root, 0);
+        b.Insert(root, 6);
+        b.Insert(root, 1);
 
         System.out.println("INORDER :  ");
         b.inorder(root);
